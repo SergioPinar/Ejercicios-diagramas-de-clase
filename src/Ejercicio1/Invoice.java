@@ -8,7 +8,7 @@ public class Invoice {
     private List<Product> products;
 
     public Invoice(String customer) {
-        this.customer = customer;
+        this.setCustomer(customer);
         this.products = new ArrayList<>();
     }
 
@@ -29,4 +29,12 @@ public class Invoice {
         }
         return total;
     }
+
+	public String getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(String customer) {
+		this.customer = customer;
+	}
 }
